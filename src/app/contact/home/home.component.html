@@ -1,0 +1,58 @@
+<div class='contact'>
+    <div class='contact-info'>
+        <h1 [class]="mouseInAnimate === 'shout' ? 'contact-us-h1 animate_infinity_shout_mouseIn':'contact-us-h1'" (mouseenter)="setMouseInAnimate('shout')" (mouseleave)="setMouseInAnimate('')">
+            Give us a shout,
+            <br />
+            we'll make you a beliver.
+        </h1>
+        <div class='contact-us-more'>
+            <div class='contact-us-more-reach'>
+                Want to get in touch? We'd love to hear from you.
+                <br />
+                here's how you can reach us...
+            </div>
+            <div class='contact-us-more-feedback' (mouseenter)="setMouseInAnimate('feedback')" (mouseleave)="setMouseInAnimate('')">
+                <div [class]="mouseInAnimate === 'feedback' ? 'animate_infinity_feedback_mouseIn':''">
+                    Feedback
+                </div>
+            </div>
+            <div class='contact-us-more-feedback-description'>
+                We're keen to hear your feedback about erinyes,
+                <br />
+                so that we can keep improving the service.
+            </div>
+            <div class='contact-us-more-busniss' (mouseenter)="setMouseInAnimate('business')" (mouseleave)="setMouseInAnimate('')">
+                <div [class]="mouseInAnimate === 'business' ? 'animate_infinity_business_mouseIn':''">
+                    new business
+                </div>
+            </div>
+            <div class='contact-us-more-busniss-description'>
+                Send us a brief description of your idea an RFP to:
+            </div>
+            <div class='contact-email'>
+                <a [class]="Theme ? (mouseInAnimate === 'email' ? 'contact-us-more-email theme animate_infinity_email_mouseIn':'contact-us-more-email theme'):(mouseInAnimate === 'email' ? 'contact-us-more-email animate_infinity_email_mouseIn':'contact-us-more-email')"
+                href='mailto:erinyesinfo@gmail.com?subject=Your subject&body=Your Message'
+                (mouseenter)="setMouseInAnimate('email')"
+                (mouseleave)="setMouseInAnimate('')">
+                    erinyesinfo@gmail.com
+                </a>
+            </div>
+            <br />
+            <div class='contact-us-more-git'>
+                <a rel="noopener noreferrer" href='https://github.com/erinyesinfo' target='_blank'>
+                    <app-icons svg="Github"></app-icons>
+                </a>
+                <a rel="noopener noreferrer" href='https://www.linkedin.com/in/erin-yes' target='_blank'>
+                    <app-icons svg="Linkedin" ></app-icons>
+                </a>
+                <a rel="noopener noreferrer" href='https://codepen.io/jigsaw487' target='_blank'>
+                    <app-icons svg="Codepen"></app-icons>
+                </a>
+                <a rel="noopener noreferrer" href='https://erinyesinfo.medium.com' target='_blank'>
+                    <app-icons svg="Medium"></app-icons>
+                </a>
+            </div>
+        </div>
+    </div>
+    <app-icons svg="Shout"></app-icons>
+</div>

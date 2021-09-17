@@ -1,0 +1,118 @@
+.skills { margin: 40px; }
+.skills-me {
+    color: rgba(0, 0, 0, .64);
+    margin-bottom: 40px;
+}.skills-me:hover { color: rgba(0, 0, 0, .84); }
+.skills-me-white {
+    color: rgba(255, 255, 255, .64);
+    margin-bottom: 40px;
+}.skills-me-white:hover { color: rgba(255, 255, 255, .84); }
+.skills-strongest, .skills-good, .skills-basics {
+    display: flex;
+    flex-wrap: wrap;
+}.skills-strongest .title, .skills-good .title, .skills-basics .title {
+    width: 100%;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 15px;
+}
+.skills-language {
+    display: flex;
+    border: 1px solid #eee;
+    padding: 7px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    white-space: break-spaces;
+    position: relative;
+}
+.skills-hr {
+    width: 100%;
+    position: absolute;
+    bottom: -2px;
+    left: -1px;
+    color: deepskyblue;
+}
+
+/* strongest */
+.hr-photoshop { width: 85%; }
+.hr-illustration { width: 85%; }
+.hr-afterEffects { width: 85%; }
+.hr-html5 { width: 70%; }
+.hr-css3 { width: 70%; }
+.hr-bootstrap { width: 70%; }
+.hr-javascript { width: 60%; }
+.hr-jquery { width: 60%; }
+.hr-git { width: 70%; }
+.hr-react { width: 80%; }
+.hr-redux { width: 80%; }
+.hr-reactnative { width: 70%; }
+/* good but lack experiance */
+.hr-angular { width: 60%; }
+.hr-python { width: 60%; }
+.hr-node { width: 60%; }
+.hr-mysql { width: 60%; }
+.hr-mongoDB { width: 60%; }
+.hr-typescript { width: 60%; }
+.hr-ejs { width: 80%; }
+.hr-pug { width: 80%; }
+.hr-hbs { width: 80%; }
+.hr-restapi { width: 60%; }
+.hr-graphql { width: 40%; }
+/* basics */
+.hr-c { width: 20%; }
+.hr-php { width: 20%; }
+.hr-linux { width: 20%; }
+
+
+
+/*
+ *
+ * Animations
+ *
+*/
+
+/* referring directly to the animation's @keyframe declaration */
+.animate_skills_description {
+    color: deepskyblue;
+    display: inline-flex;
+    -webkit-animation: jackInTheBox 2s infinite forwards;
+    -moz-animation: jackInTheBox 2s infinite forwards;
+    -o-animation: jackInTheBox 2s infinite forwards;
+    animation: jackInTheBox 2s infinite forwards;
+}
+.animate_infinity_strongest_mouseIn {
+    display: inline-flex;
+    -webkit-animation: wobble 1s infinite forwards;
+    -moz-animation: wobble 1s infinite forwards;
+    -o-animation: wobble 1s infinite forwards;
+    animation: wobble 1s infinite forwards;
+}.animate_infinity_good_mouseIn {
+    display: inline-flex;
+    -webkit-animation: wobble 2s infinite forwards;
+    -moz-animation: wobble 2s infinite forwards;
+    -o-animation: wobble 2s infinite forwards;
+    animation: wobble 2s infinite forwards;
+}.animate_infinity_basic_mouseIn {
+    display: inline-flex;
+    -webkit-animation: wobble 3s infinite forwards;
+    -moz-animation: wobble 3s infinite forwards;
+    -o-animation: wobble 3s infinite forwards;
+    animation: wobble 3s infinite forwards;
+}
+.animate_infinity_strongest_mouseIn_skill { 
+    color: lightseagreen;
+    -webkit-animation: rubberBand 0.8s infinite forwards;
+    -moz-animation: rubberBand 0.8s infinite forwards;
+    -o-animation: rubberBand 0.8s infinite forwards;
+    animation: rubberBand 0.8s infinite forwards;
+}.animate_infinity_good_mouseIn_skill {
+    -webkit-animation: swing 0.8s infinite forwards;
+    -moz-animation: swing 0.8s infinite forwards;
+    -o-animation: swing 0.8s infinite forwards;
+    animation: swing 0.8s infinite forwards;
+}.animate_infinity_basic_mouseIn_skill {
+    -webkit-animation: rubberBand 0.8s infinite forwards;
+    -moz-animation: rubberBand 0.8s infinite forwards;
+    -o-animation: rubberBand 0.8s infinite forwards;
+    animation: rubberBand 0.8s infinite forwards;
+}

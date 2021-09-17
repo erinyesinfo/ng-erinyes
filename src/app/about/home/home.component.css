@@ -1,0 +1,52 @@
+.about { margin: 40px;position: relative; }
+.about-me { margin-bottom: 20px; }
+.about-me span, .about-me-more span { color: cornflowerblue; }
+.about-me-more a {
+    color: cornflowerblue;
+    text-decoration: none;
+}.about-me-more a:hover { text-decoration: underline; }
+.about-contact-btn a {
+    color: #fff;
+    background-color: steelblue;
+    justify-content: center;
+    display: flex;
+    width: 120px;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 2px;
+    text-decoration: none;
+    margin-top: 10px;
+}.about-contact-btn a:hover {
+    background-color: rgb(46, 110, 162);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/*
+ *
+ * Animations
+ *
+*/
+
+/* referring directly to the animation's @keyframe declaration */
+.animate_infinity_funny_mouseIn {
+    display: inline-flex;
+    -webkit-animation: tada 2s infinite forwards;
+    -moz-animation: tada 2s infinite forwards;
+    -o-animation: tada 2s infinite forwards;
+    animation: tada 2s infinite forwards;
+}.animate_infinity_smart_mouseIn {
+    display: inline-flex;
+    -webkit-animation: flash 2s infinite forwards;
+    -moz-animation: flash 2s infinite forwards;
+    -o-animation: flash 2s infinite forwards;
+    animation: flash 2s infinite forwards;
+}.animate_infinity_hardWorker_mouseIn {
+    display: inline-flex;
+    -webkit-animation: shakeX 2s infinite forwards;
+    -moz-animation: shakeX 2s infinite forwards;
+    -o-animation: shakeX 2s infinite forwards;
+    animation: shakeX 2s infinite forwards;
+}

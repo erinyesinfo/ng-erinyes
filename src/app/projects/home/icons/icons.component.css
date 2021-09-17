@@ -1,0 +1,17 @@
+.globe, .github, .IMG {
+    height: 23px;
+    width: 23px;
+    cursor: pointer;
+}
+.globe, .github { margin-right: 7px; }
+@media screen and (max-width: 576px) {
+    .globe, .github {
+        height: 17px;
+        width: 17px;
+        cursor: pointer;
+    } .IMG {
+        height: 13px;
+        width: 17px;
+        cursor: pointer;
+    }
+}

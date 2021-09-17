@@ -1,0 +1,40 @@
+<div class='portfolio'>
+    <span class="span-img">
+        <img class='portfolio-img' style="height: 100%;width: 100%;"
+            defaultImage="assets/portfolio/jeremy-beadle-129624-unsplash-lower.jpg" lazyLoad="assets/portfolio/jeremy-beadle-129624-unsplash.jpg"
+        />
+    </span>
+    <div class='portfolio-container'>
+        <h1 class='portfolio-hi'>
+            <div [class]="mouseInAnimate === 'H' ? 'animate_header_H':''" (mouseenter)="setMouseInAnimate('H')" (mouseleave)="setMouseInAnimate('')">H</div>
+            <div [class]="mouseInAnimate === 'I' ? 'animate_header_I':''" (mouseenter)="setMouseInAnimate('I')" (mouseleave)="setMouseInAnimate('')">i</div>
+            <div [class]="mouseInAnimate === '!' ? 'animate_header_i':''" (mouseenter)="setMouseInAnimate('!')" (mouseleave)="setMouseInAnimate('')">!</div>&nbsp;
+        </h1>
+        <h1 class='portfolio-im'>
+            <div [class]="mouseInAnimate === 'i' ? 'animate_header_name_I':''" (mouseenter)="setMouseInAnimate('i')" (mouseleave)="setMouseInAnimate('')">I</div>
+            <div [class]="mouseInAnimate === '$' ? 'animate_header_name_i':''" (mouseenter)="setMouseInAnimate('$')" (mouseleave)="setMouseInAnimate('')">'</div>
+            <div [class]="mouseInAnimate === 'm' ? 'animate_header_name_M':''" (mouseenter)="setMouseInAnimate('m')" (mouseleave)="setMouseInAnimate('')">m</div>&nbsp;
+            <div [class]="mouseInAnimate === 'h' ? 'animate_header_name':''" (mouseenter)="setMouseInAnimate('h')" (mouseleave)="setMouseInAnimate('')">H</div>
+            <div [class]="mouseInAnimate === 'i2' ? 'animate_header_name':''" (mouseenter)="setMouseInAnimate('i2')" (mouseleave)="setMouseInAnimate('')">i</div>
+            <div [class]="mouseInAnimate === 'c' ? 'animate_header_name':''" (mouseenter)="setMouseInAnimate('c')" (mouseleave)="setMouseInAnimate('')">c</div>
+            <div [class]="mouseInAnimate === 'h2' ? 'animate_header_name':''" (mouseenter)="setMouseInAnimate('h2')" (mouseleave)="setMouseInAnimate('')">h</div>
+            <div [class]="mouseInAnimate === 'a' ? 'animate_header_name':''" (mouseenter)="setMouseInAnimate('a')" (mouseleave)="setMouseInAnimate('')">a</div>
+            <div [class]="mouseInAnimate === 'm2' ? 'animate_header_name':''" (mouseenter)="setMouseInAnimate('m2')" (mouseleave)="setMouseInAnimate('')">m</div>
+        </h1>
+        <div (mouseenter)="setMouseInAnimate('description')" (mouseleave)="setMouseInAnimate('')">
+            <div [class]="mouseInAnimate === 'description' ? 'portfolio-description':''">
+                Developer who can build anything involve front-end
+            </div>
+        </div>
+        <a class="about-scroll" routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+            <div class='portfolio-more'>
+                More about me
+            </div>
+        </a>
+        <a class='portfolio-patron' rel="noopener noreferrer"
+            href="https://www.patreon.com/bePatron?u=40714472" target='_blank'>
+            Become a Patron!
+        </a>
+        <script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+    </div>
+</div>

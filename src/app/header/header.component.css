@@ -1,0 +1,161 @@
+/* Header */
+.headerHelper {
+    background-color: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 20px 20px 15px;
+    z-index: 9999;
+}
+.headerWrapper {
+    background-color: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+.header-container {
+    background-color:white;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+.header-add-black-theme { background-color: #000; }
+.header-logo {
+    width: 25px;
+}.header-logo:hover {
+    cursor: pointer;
+}.header-logo img {
+    width: 100%;
+}
+.header-navs {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+}
+.nav-menu {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}.nav-menu svg { height: 20px; }
+
+.header-navs-version, .header-navs-portfolio, .header-navs-about, .header-navs-projects, .header-navs-skills {
+    margin-bottom: 5px;
+}
+.header-navs-version a, .header-navs-portfolio a, .header-navs-projects a, .header-navs-about a, .header-navs-skills a, .header-navs-contact a {
+    text-decoration: none;
+    color: #818182
+}.header-navs-version a:hover,.header-navs-portfolio a:hover, .header-navs-projects a:hover, .header-navs-about a:hover, .header-navs-skills a:hover, .header-navs-contact a:hover {
+    color: #000;
+    cursor: pointer;
+}.active {
+    color: #000;
+    border-bottom: 1px solid cornflowerblue;
+    cursor: default;
+}
+.header-navs-version a.theme-black:hover,.header-navs-portfolio a.theme-black:hover, .header-navs-projects a.theme-black:hover, .header-navs-about a.theme-black:hover, .header-navs-skills a.theme-black:hover, .header-navs-contact a.theme-black:hover {
+    color: #fff;
+    cursor: pointer;
+}
+.header-navs-color {
+    position: relative;
+}
+.header-theme-close {
+    -moz-animation: propertieFadeOut 5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    -webkit-animation: propertieFadeOut 5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    -o-animation: propertieFadeOut 5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    animation: propertieFadeOut 5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+.header-navs-color img {
+    height: 25px;
+    cursor: pointer;
+}
+
+.header-copyright {
+    margin: 40px 0;
+    font-size: 13px;
+    text-align: center;
+    color: gray;
+}
+
+
+@media screen and (max-width: 599px) {
+    .mobile-576 { display: flex;align-items: flex-end; }
+    .mobile-576 button { margin-right: 10px; }
+    .headerHelper { padding: 0; }
+    .headerWrapper {
+        padding: 0;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 3;
+        background: black;
+        padding: 10px 10px 5px 10px;
+    }
+    .logo-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header-navs {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin: 10px 0 15px;
+    }
+    .header-navs-version a, .header-navs-portfolio a, .header-navs-projects a, .header-navs-about a, .header-navs-skills a, .header-navs-contact a {
+        display: block;
+        width: 100%;
+    }.header-navs-version a:hover, .header-navs-portfolio a:hover, .header-navs-projects a:hover, .header-navs-about a:hover, .header-navs-skills a:hover, .header-navs-contact a:hover {
+        color: white;
+    }.header-navs-portfolio .active, .header-navs-projects .active, .header-navs-about .active, .header-navs-skills .active, .header-navs-contact .active {
+        color: cornflowerblue;
+    }
+    .active { border: none }
+    .header-navs-color { margin: 0; }
+}
+
+@-webkit-keyframes propertieFadeOut {
+    0% {
+        -moz-transition: all .5s ease-in-out;
+        -webkit-transition: all .5s ease-in-out;
+        -o-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+    } 98% {
+        background-color: black;
+        opacity: 1;
+        width: 150px;
+    } 99% {
+        opacity: 0.3;
+        width: 75px;
+    } 100% {
+        display: none;
+    }
+}
+@keyframes propertieFadeOut {
+    0% {
+        -moz-transition: all .5s ease-in-out;
+        -webkit-transition: all .5s ease-in-out;
+        -o-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+    } 98% {
+        background-color: black;
+        opacity: 1;
+        width: 150px;
+    } 99% {
+        opacity: 0.3;
+        width: 75px;
+    } 100% {
+        display: none;
+    }
+}

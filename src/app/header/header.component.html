@@ -1,0 +1,66 @@
+<div [class]="matches576 ? (
+    Theme ? 'headerWrapper header-add-black-theme':'headerWrapper'):Theme ? (
+        'headerHelper header-add-black-theme'):'headerHelper'">
+    <div [class]="Theme ? 'header-container header-add-black-theme':'header-container'">
+        <div class='logo-menu'>
+            <a routerLink="/" routerLinkActive="active" class="portfolio-scroll" [routerLinkActiveOptions]="{ exact: true }">
+                <div class='header-logo'>
+                    <img defaultImage="assets/header/logo-lower.jpg" lazyLoad="assets/header/logo.png" draggable="false" alt="erinyes" />
+                </div>
+            </a>
+            <ng-container *ngIf="matches576">
+                <div class='mobile-576'>
+                    <button class='nav-menu' type='button' (click)="handleShowMenu()">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 162.3 182.85">
+                            <defs><style>.Menu-1{fill:deeppink;}.Menu-2{fill:#000;}</style></defs><g id="Layer_2" data-name="Menu 2"><g id="Layer_1-2" data-name="Menu 1"><g id="Menu"><path class="Menu-1" d="M.21,53.79c-.08-5.94,2.11-10,7.36-13q33.59-19.11,67-38.61C79.55-.77,84-.68,89,2.22Q122.4,21.72,156,40.9c4.37,2.5,6.38,5.9,6.35,10.93q-.2,39.21-.17,78.44a11.35,11.35,0,0,1-6.07,10.64q-34.8,20-69.54,40.14a11.63,11.63,0,0,1-12.32.06q-34.39-19.7-68.78-39.45C1.32,139.31,0,135.75,0,131.23c.08-13,0-26,0-39C.11,92.26.39,66.61.21,53.79Z"/><rect class="Menu-2" x="38.12" y="125.61" width="87" height="3" rx="1.5"/><rect class="Menu-2" x="38.12" y="98.61" width="62" height="3" rx="1.5"/><rect class="Menu-2" x="38.12" y="72.61" width="62" height="3" rx="1.5"/><rect class="Menu-2" x="38.12" y="45.61" width="87" height="3" rx="1.5"/></g></g></g>
+                        </svg>
+                    </button>
+                    <div class='header-navs-color' (mouseenter)="handleShowTheme()" (mouseleave)="handleCloseTheme()">
+                        <app-theme (handleLightTheme_LocalStorage)="handleLightTheme_LocalStorage()"
+                          (handleDarkTheme_LocalStorage)="handleDarkTheme_LocalStorage()"
+                        ></app-theme>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+        <ng-container *ngIf="!matches576 || showMenu">
+            <div class='header-navs'>
+                <div class='header-navs-version'>
+                    <a [class]="Theme ? 'version-scroll theme-black':'version-scroll'" rel="noopener noreferrer" href='https://erinyes.netlify.app' target='_blank'>V1</a>
+                </div>
+                <div class='header-navs-portfolio'>
+                    <a routerLink="/" routerLinkActive="active" [class]="Theme ? 'portfolio-scroll theme-black':'portfolio-scroll'" [routerLinkActiveOptions]="{ exact: true }">
+                        Portfolio
+                    </a>
+                </div>
+                <div class='header-navs-projects'>
+                    <a routerLink="/projects" routerLinkActive="active" [class]="Theme ? 'projects-scroll theme-black':'projects-scroll'" [routerLinkActiveOptions]="{ exact: true }">
+                        Projects
+                    </a>
+                </div>
+                <div class='header-navs-about'>
+                    <a routerLink="/about" routerLinkActive="active" [class]="Theme ? 'about-scroll theme-black':'about-scroll'" [routerLinkActiveOptions]="{ exact: true }">
+                        About
+                    </a>
+                </div>
+                <div class='header-navs-skills'>
+                    <a routerLink="/skills" routerLinkActive="active" [class]="Theme ? 'skills-scroll theme-black':'skills-scroll'" [routerLinkActiveOptions]="{ exact: true }">
+                        Skills
+                    </a>
+                </div>
+                <div class='header-navs-contact'>
+                    <a routerLink="/contact" routerLinkActive="active" [class]="Theme ? 'contact-scroll theme-black':'contact-scroll'" [routerLinkActiveOptions]="{ exact: true }">
+                        Contact
+                    </a>
+                </div>
+                <ng-container *ngIf="!matches576">
+                    <div class='header-navs-color' (click)="handleShowTheme()" (mouseenter)="handleShowTheme()" (mouseleave)="handleCloseTheme()">
+                        <app-theme (handleLightTheme_LocalStorage)="handleLightTheme_LocalStorage()"
+                          (handleDarkTheme_LocalStorage)="handleDarkTheme_LocalStorage()"
+                        ></app-theme>
+                    </div>
+                </ng-container>
+            </div>
+        </ng-container>
+    </div>
+</div>

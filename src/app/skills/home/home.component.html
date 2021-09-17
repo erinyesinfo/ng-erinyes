@@ -1,0 +1,156 @@
+<div class='skills'>
+    <div [class]="Theme ? 'skills-me-white':'skills-me'">
+        More than <div class='animate_skills_description'>30 certificates in Udemy</div> moreover my skills rely on front-end tasks like React.js and Redux.js, and more as you can see :)
+    </div>
+    <div class='skills-me-more'>
+        <div class='skills-strongest'>
+            <div class='title' (mouseenter)="setMouseInAnimate('strongest')" (mouseleave)="setMouseInAnimate('')">
+                <div [class]="mouseInAnimate === 'strongest' ? 'animate_infinity_strongest_mouseIn':''">
+                    Strongest
+                </div>
+            </div>
+            <div class='skills-language'>
+                <app-icons svg="Html5"></app-icons> &nbsp;
+                <span [class]="mouseInAnimate === 'html5' ? 'animate_infinity_strongest_mouseIn_skill':''" (mouseenter)="setMouseInAnimate('html5')" (mouseleave)="setMouseInAnimate('')">Html5</span>
+                <hr class='skills-hr hr-html5' />
+            </div>
+            <div class='skills-language'>
+                <app-icons svg="Css3"></app-icons> &nbsp;<span [class]="mouseInAnimate === 'css3' ? 'animate_infinity_strongest_mouseIn_skill':''" (mouseenter)="setMouseInAnimate('css3')" (mouseleave)="setMouseInAnimate('')">Css3</span>
+                <hr class='skills-hr hr-css3' />
+            </div>
+            <div class='skills-language'>
+                <app-icons svg="Bootstrap"></app-icons> &nbsp;
+                <span [class]="mouseInAnimate === 'bootstrap' ? 'animate_infinity_strongest_mouseIn_skill':''" (mouseenter)="setMouseInAnimate('bootstrap')" (mouseleave)="setMouseInAnimate('')">Bootstrap</span>
+                <hr class='skills-hr hr-bootstrap' />
+            </div>
+            <div class='skills-language'>
+                <app-icons svg="JavaScript"></app-icons> &nbsp;
+                <span [class]="mouseInAnimate === 'javascript' ? 'animate_infinity_strongest_mouseIn_skill':''" (mouseenter)="setMouseInAnimate('javascript')" (mouseleave)="setMouseInAnimate('')">Javascript</span>
+                <hr class='skills-hr hr-javascript' />
+            </div>
+            <div class='skills-language'>
+                <app-icons svg="JQuery"></app-icons> &nbsp;<span [class]="mouseInAnimate === 'jquery' ? 'animate_infinity_strongest_mouseIn_skill':''" (mouseenter)="setMouseInAnimate('jquery')" (mouseleave)="setMouseInAnimate('')">jQuery</span>
+                <hr class='skills-hr hr-jquery' />
+            </div>
+            <div class='skills-language'>
+                <app-icons svg="Git"></app-icons> &nbsp;<span [class]="mouseInAnimate === 'git' ? 'animate_infinity_strongest_mouseIn_skill':''" (mouseenter)="setMouseInAnimate('git')" (mouseleave)="setMouseInAnimate('')">Git</span>
+                <hr class='skills-hr hr-git' />
+            </div>
+            <div class='skills-language'>
+                <app-icons svg="Reactjs"></app-icons> &nbsp;
+                <span [class]="mouseInAnimate === 'react' ? 'animate_infinity_strongest_mouseIn_skill':''" (mouseenter)="setMouseInAnimate('react')" (mouseleave)="setMouseInAnimate('')">React</span>
+                <hr class='skills-hr hr-react' />
+            </div>
+            <div class='skills-language'>
+                <app-icons svg="Reduxjs"></app-icons> &nbsp;
+                <span [class]="mouseInAnimate === 'redux' ? 'animate_infinity_strongest_mouseIn_skill':''" (mouseenter)="setMouseInAnimate('redux')" (mouseleave)="setMouseInAnimate('')">Redux</span>
+                <hr class='skills-hr hr-redux' />
+            </div>
+            <div class='skills-language'>
+                <app-icons svg="ReactNative"></app-icons> &nbsp;
+                <span [class]="mouseInAnimate === 'reactnative' ? 'animate_infinity_strongest_mouseIn_skill':''" (mouseenter)="setMouseInAnimate('reactnative')" (mouseleave)="setMouseInAnimate('')">React Native</span>
+                <hr class='skills-hr hr-reactnative' />
+            </div>
+            <div class='skills-language'>
+                <app-icons svg="Photoshope"></app-icons> &nbsp;
+                <span [class]="mouseInAnimate === 'photoshop' ? 'animate_infinity_strongest_mouseIn_skill':''" (mouseenter)="setMouseInAnimate('photoshop')" (mouseleave)="setMouseInAnimate('')">Adobe Photoshop</span>
+                <hr class='skills-hr hr-photoshop' />
+            </div>
+            <div class='skills-language'>
+                <app-icons svg="Illustration"></app-icons> &nbsp;
+                <span [class]="mouseInAnimate === 'illustration' ? 'animate_infinity_strongest_mouseIn_skill':''" (mouseenter)="setMouseInAnimate('illustration')" (mouseleave)="setMouseInAnimate('')">Adobe Illustration</span>
+                <hr class='skills-hr hr-illustration' />
+            </div>
+            <div class='skills-language'>
+                <app-icons svg="AfterEffects"></app-icons> &nbsp;
+                <span [class]="mouseInAnimate === 'afterEffects' ? 'animate_infinity_strongest_mouseIn_skill':''" (mouseenter)="setMouseInAnimate('afterEffects')" (mouseleave)="setMouseInAnimate('')">Adobe After Effects</span>
+                <hr class='skills-hr hr-afterEffects' />
+            </div>
+        </div>
+        <!-- good but lack of experiance -->
+        <div class='skills-good'>
+            <div class='title' (mouseenter)="setMouseInAnimate('good')" (mouseleave)="setMouseInAnimate('')">
+                <span [class]="mouseInAnimate === 'good' ? 'animate_infinity_good_mouseIn':''">
+                    Good
+                </span>&nbsp;but lack of experience
+            </div>
+            <div [class]="mouseInAnimate === 'angular' ? 'skills-language animate_infinity_good_mouseIn_skill':'skills-language'" (mouseenter)="setMouseInAnimate('angular')" (mouseleave)="setMouseInAnimate('')">
+                <app-icons svg="Angular"></app-icons> Angular
+                <hr class='skills-hr hr-angular' />
+            </div>
+            <div [class]="mouseInAnimate === 'python' ? 'skills-language animate_infinity_good_mouseIn_skill':'skills-language'" (mouseenter)="setMouseInAnimate('python')" (mouseleave)="setMouseInAnimate('')">
+                <app-icons svg="Python"></app-icons> Python
+                <hr class='skills-hr hr-python' />
+            </div>
+            <div [class]="mouseInAnimate === 'node' ? 'skills-language animate_infinity_good_mouseIn_skill':'skills-language'" (mouseenter)="setMouseInAnimate('node')" (mouseleave)="setMouseInAnimate('')">
+                <app-icons svg="Nodejs"></app-icons> Node, Express
+                <hr class='skills-hr hr-node' />
+            </div>
+            <div [class]="mouseInAnimate === 'mongodb' ? 'skills-language animate_infinity_good_mouseIn_skill':'skills-language'" (mouseenter)="setMouseInAnimate('mongodb')" (mouseleave)="setMouseInAnimate('')">
+                <app-icons svg="MongoDB"></app-icons> MongoDB
+                <hr class='skills-hr hr-mysql' />
+            </div>
+            <div [class]="mouseInAnimate === 'mysql' ? 'skills-language animate_infinity_good_mouseIn_skill':'skills-language'" (mouseenter)="setMouseInAnimate('mysql')" (mouseleave)="setMouseInAnimate('')">
+                <app-icons svg="MySQL"></app-icons> MySQL
+                <hr class='skills-hr hr-mysql' />
+            </div>
+            <div [class]="mouseInAnimate === 'typescript' ? 'skills-language animate_infinity_good_mouseIn_skill':'skills-language'" (mouseenter)="setMouseInAnimate('typescript')" (mouseleave)="setMouseInAnimate('')">
+                <app-icons svg="TypeScript"></app-icons> TypeScript
+                <hr class='skills-hr hr-typescript' />
+            </div>
+            <div [class]="mouseInAnimate === 'agile' ? 'skills-language animate_infinity_good_mouseIn_skill':'skills-language'" (mouseenter)="setMouseInAnimate('agile')" (mouseleave)="setMouseInAnimate('')">
+                <app-icons svg="Agile"></app-icons> Agile
+                <hr class='skills-hr hr-git' />
+            </div>
+            <div [class]="mouseInAnimate === 'next' ? 'skills-language animate_infinity_good_mouseIn_skill':'skills-language'" (mouseenter)="setMouseInAnimate('next')" (mouseleave)="setMouseInAnimate('')">
+                <app-icons svg="Nextjs"></app-icons> Nextjs
+                <hr class='skills-hr hr-git' />
+            </div>
+            <div [class]="mouseInAnimate === 'sass' ? 'skills-language animate_infinity_good_mouseIn_skill':'skills-language'" (mouseenter)="setMouseInAnimate('sass')" (mouseleave)="setMouseInAnimate('')">
+                <app-icons svg="Sass"></app-icons> Sass
+                <hr class='skills-hr hr-git' />
+            </div>
+            <div [class]="mouseInAnimate === 'ejs' ? 'skills-language animate_infinity_good_mouseIn_skill':'skills-language'" (mouseenter)="setMouseInAnimate('ejs')" (mouseleave)="setMouseInAnimate('')">
+                <app-icons svg="EJS"></app-icons> EJS
+                <hr class='skills-hr hr-ejs' />
+            </div>
+            <div [class]="mouseInAnimate === 'pug' ? 'skills-language animate_infinity_good_mouseIn_skill':'skills-language'" (mouseenter)="setMouseInAnimate('pug')" (mouseleave)="setMouseInAnimate('')">
+                <app-icons svg="PUG"></app-icons> PUG
+                <hr class='skills-hr hr-pug' />
+            </div>
+            <div [class]="mouseInAnimate === 'hbs' ? 'skills-language animate_infinity_good_mouseIn_skill':'skills-language'" (mouseenter)="setMouseInAnimate('hbs')" (mouseleave)="setMouseInAnimate('')">
+                <app-icons svg="HBS"></app-icons> HBS
+                <hr class='skills-hr hr-hbs' />
+            </div>
+            <div [class]="mouseInAnimate === 'restapi' ? 'skills-language animate_infinity_good_mouseIn_skill':'skills-language'" (mouseenter)="setMouseInAnimate('restapi')" (mouseleave)="setMouseInAnimate('')">
+                <app-icons svg="RestApi"></app-icons> Rest Api
+                <hr class='skills-hr hr-restapi' />
+            </div>
+            <div [class]="mouseInAnimate === 'graphql' ? 'skills-language animate_infinity_good_mouseIn_skill':'skills-language'" (mouseenter)="setMouseInAnimate('graphql')" (mouseleave)="setMouseInAnimate('')">
+                <app-icons svg="Graphql"></app-icons> Graphql
+                <hr class='skills-hr hr-graphql' />
+            </div>
+        </div>
+        <!-- basics -->
+        <div class='skills-basics'>
+            <div class='title' (mouseenter)="setMouseInAnimate('basic')" (mouseleave)="setMouseInAnimate('')">
+                Only&nbsp;
+                <span [class]="mouseInAnimate === 'basic' ? 'animate_infinity_basic_mouseIn':''">
+                    basics
+                </span>
+            </div>
+            <div [class]="mouseInAnimate === 'c' ? 'skills-language animate_infinity_basic_mouseIn_skill':'skills-language'" (mouseenter)="setMouseInAnimate('c')" (mouseleave)="setMouseInAnimate('')">
+                <app-icons svg="CLanguage"></app-icons> C language
+                <hr class='skills-hr hr-c' />
+            </div>
+            <div [class]="mouseInAnimate === 'php' ? 'skills-language animate_infinity_basic_mouseIn_skill':'skills-language'" (mouseenter)="setMouseInAnimate('php')" (mouseleave)="setMouseInAnimate('')">
+                <app-icons svg="PHP"></app-icons> PHP
+                <hr class='skills-hr hr-php' />
+            </div>
+            <div [class]="mouseInAnimate === 'linux' ? 'skills-language animate_infinity_basic_mouseIn_skill':'skills-language'" (mouseenter)="setMouseInAnimate('linux')" (mouseleave)="setMouseInAnimate('')">
+                <app-icons svg="Linux"></app-icons> Linux
+                <hr class='skills-hr hr-linux' />
+            </div>
+        </div>
+    </div>
+</div>

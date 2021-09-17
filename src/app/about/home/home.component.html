@@ -1,0 +1,29 @@
+<div class='about'>
+    <div class='about-me'>
+        Hi I'm Hicham design lover based in Algeria. <span>I'm available for freelance work and projects</span>. I specialise in front-end design.
+        <br />
+        <div class='about-contact-btn'>
+            <a rel="noopener noreferrer" href='https://drive.google.com/file/d/1a0AFS6N3Ont8lovXVTdF0uFu95daUbst/view?usp=sharing' target='_blank'>View CV</a>
+        </div>
+    </div>
+    <div class='about-me-more'>
+        <span style="display: flex;">
+            <span [class]="mouseInAnimate === 'funny' ? 'animate_infinity_funny_mouseIn':''" (mouseenter)="setMouseInAnimate('funny')" (mouseleave)="setMouseInAnimate('')">
+                I am funny.
+            </span>&nbsp;
+            <span [class]="mouseInAnimate === 'smart' ? 'animate_infinity_smart_mouseIn':''" (mouseenter)="setMouseInAnimate('smart')" (mouseleave)="setMouseInAnimate('')">
+                I am smart.
+            </span>&nbsp;
+            <span [class]="mouseInAnimate === 'hardWorker' ? 'animate_infinity_hardWorker_mouseIn':''" (mouseenter)="setMouseInAnimate('hardWorker')" (mouseleave)="setMouseInAnimate('')">
+                I am a hard worker.
+            </span>
+        </span>
+        <br /><br />
+        Creative and self-taught with over 5 years of front-end experience and passion for responsive website design and a firm believer in the mobile-first approach. And I love working with React and Redux.
+        <br /><br />
+        Writer, and teacher, and publisher that has been curated by <a rel="noopener noreferrer" href="https://erinyesinfo.medium.com" target='_blank'>Medium</a> many times.
+        <br /><br />
+        The more you learn, the stronger you will be.
+    </div>
+    <app-talent></app-talent>
+</div>

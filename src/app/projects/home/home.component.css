@@ -1,0 +1,108 @@
+.project-container {
+    background-color: linen;
+    font-size: 15px;
+    padding: 0 10px 5px;
+    margin: 0 50px 35px;
+    border: 0;
+    border-radius: 3px;
+}.project-container.black-theme { background-color: black; }
+.project-navs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}.project-image-btn { color: slategray }
+.project-container .title {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.project-container .definition span { color: gray;font-size: 14px; }
+.project-container .definition .line-of-code { color: cornflowerblue }
+.created-title {
+    color: lightseagreen;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 15px 0 5px;
+}
+.update-title {
+    color: cornflowerblue;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 10px 0 5px;
+}
+.technologies { margin-bottom: 10px; }
+.technologies.hoomer { margin-top: 15px; }
+.technologies-title {
+    color: slateblue;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 10px 0 5px;
+}
+.technology {
+    color: white;
+    background-color: dodgerblue;
+    display: inline-flex;
+    font-size: 12px;
+    padding: 3px 12px;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.a-android {
+    width: 18px;
+    margin-right: 7px;
+}
+
+@media screen and (max-width: 576px) {
+    .a-android { width: 10.5px; }
+}
+
+
+/*
+ *
+ * Animations
+ *
+*/
+
+/* referring directly to the animation's @keyframe declaration */
+.animate_infinity_completed_mouseIn {
+    display: inline-flex;
+    -webkit-animation: lightSpeedInLeft 2s infinite forwards;
+    -moz-animation: lightSpeedInLeft 2s infinite forwards;
+    -o-animation: lightSpeedInLeft 2s infinite forwards;
+    animation: lightSpeedInLeft 2s infinite forwards;
+}.animate_infinity_projects_mouseIn {
+    display: inline-flex;
+    -webkit-animation: flip 2s infinite forwards;
+    -moz-animation: flip 2s infinite forwards;
+    -o-animation: flip 2s infinite forwards;
+    animation: flip 2s infinite forwards;
+}
+
+.animate_infinity_mikta_mouseIn {
+    display: inline-flex;
+    -webkit-animation: wobble 2s 1 forwards;
+    -moz-animation: wobble 2s 1 forwards;
+    -o-animation: wobble 2s 1 forwards;
+    animation: wobble 2s 1 forwards;
+}.animate_infinity_bubblyfast_mouseIn {
+    display: inline-flex;
+    -webkit-animation: wobble 2s 1 forwards;
+    -moz-animation: wobble 2s 1 forwards;
+    -o-animation: wobble 2s 1 forwards;
+    animation: wobble 2s 1 forwards;
+}.animate_infinity_hoomer_mouseIn {
+    display: inline-flex;
+    -webkit-animation: wobble 2s 1 forwards;
+    -moz-animation: wobble 2s 1 forwards;
+    -o-animation: wobble 2s 1 forwards;
+    animation: wobble 2s 1 forwards;
+}.animate_infinity_taski_mouseIn {
+    display: inline-flex;
+    -webkit-animation: wobble 2s 1 forwards;
+    -moz-animation: wobble 2s 1 forwards;
+    -o-animation: wobble 2s 1 forwards;
+    animation: wobble 2s 1 forwards;
+}

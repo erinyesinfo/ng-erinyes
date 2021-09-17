@@ -1,0 +1,121 @@
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 40px;
+}
+.contact-title {
+    margin-bottom: 15px;
+    display: block;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #999999;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+.contact-page {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 4em;
+}
+
+.contact-info { margin-right: 20px; }
+.contact-us-h1 { margin-top: 0; }
+.contact-us-more-reach { margin: 40px 0; }
+.contact-us-more-busniss, .contact-us-more-feedback {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.contact-us-more-feedback-description {
+    font-size: 15px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+.contact-us-more-busniss-description {
+    font-size: 15px;
+    font-weight: lighter;
+}
+.contact-email {
+    display: flex;
+    margin: 10px 0;
+}
+.contact-us-more-email {
+    color: black;
+    display: inline-flex;
+    font-size: 15px;
+    font-weight: lighter;
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}.contact-us-more-email:hover { border-bottom: 1px solid rgb(218, 218, 218); }
+.contact-us-more-email.theme { color: #fff }
+.contact-us-more-git a {
+    color: black;
+    font-size: 22px;
+    display: inline-flex;
+    margin-right: 10px;
+}.contact-us-more-git a:hover { padding-left: 0.5px;color: cornflowerblue; }
+
+
+
+/*
+ *
+ * Animations
+ *
+*/
+
+.animate_infinity_getInTouch_mouseIn {
+    display: inline-flex;
+    -webkit-animation: lightSpeedInLeft 2s infinite forwards;
+    -moz-animation: lightSpeedInLeft 2s infinite forwards;
+    -o-animation: lightSpeedInLeft 2s infinite forwards;
+    animation: lightSpeedInLeft 2s infinite forwards;
+}.animate_infinity_contact_mouseIn {
+    display: inline-flex;
+    -webkit-animation: flip 2s infinite forwards;
+    -moz-animation: flip 2s infinite forwards;
+    -o-animation: flip 2s infinite forwards;
+    animation: flip 2s infinite forwards;
+}
+
+.animate_infinity_shout_mouseIn {
+    display: inline-flex;
+    -webkit-animation: pulse 1s infinite forwards;
+    -moz-animation: pulse 1s infinite forwards;
+    -o-animation: pulse 1s infinite forwards;
+    animation: pulse 1s infinite forwards;
+}
+
+.animate_infinity_feedback_mouseIn {
+    display: inline-flex;
+    -webkit-animation: shakeX 2s infinite forwards;
+    -moz-animation: shakeX 2s infinite forwards;
+    -o-animation: shakeX 2s infinite forwards;
+    animation: shakeX 2s infinite forwards;
+    font-size: 28px;
+}.animate_infinity_business_mouseIn {
+    display: inline-flex;
+    -webkit-animation: shakeY 2s infinite forwards;
+    -moz-animation: shakeY 2s infinite forwards;
+    -o-animation: shakeY 2s infinite forwards;
+    animation: shakeY 2s infinite forwards;
+    font-size: 28px;
+}
+
+.animate_infinity_email_mouseIn {
+    display: inline-flex;
+    -webkit-animation: tada 2s infinite forwards;
+    -moz-animation: tada 2s infinite forwards;
+    -o-animation: tada 2s infinite forwards;
+    animation: tada 2s infinite forwards;
+}.animate_infinity_netlify_mouseIn {
+    display: inline-flex;
+    -webkit-animation: bounceIn 2s infinite forwards;
+    -moz-animation: bounceIn 2s infinite forwards;
+    -o-animation: bounceIn 2s infinite forwards;
+    animation: bounceIn 2s infinite forwards;
+}

@@ -1,0 +1,211 @@
+<swiper [slidesPerView]="1"
+    [spaceBetween]="50"
+    [loop]="true"
+    (swiper)="onSwiper($event)"
+    (slideChange)="onSlideChange()"
+    (slideToClickedSlide)="true"
+    [mousewheel]="true"
+    [navigation]="true"
+    [pagination]="{ clickable: true }"
+>
+    <!-- 1 -->
+    <ng-template swiperSlide>
+        <div [class]="Theme ? 'project-container black-theme':'project-container'">
+            <div class='title' (mouseenter)="handleMouseIn('mikta')" (mouseleave)="handleMouseIn('')">
+                <div [class]="mouseInAnimate === 'mikta' ? 'animate_infinity_mikta_mouseIn':''">
+                    Mikta
+                </div>
+                <div class="project-navs">
+                    <a rel="noopener noreferrer" href="https://github.com/erinyesinfo/Mikta" target='_blank'>
+                        <app-icons svg="Github"></app-icons>
+                    </a>
+                    <a rel="noopener noreferrer" href="https://mikta.netlify.app" target='_blank'>
+                        <app-icons svg="Globe"></app-icons>
+                    </a>
+                    <a class="project-image-btn" rel="noopener noreferrer" [href]="'assets/' + images.mikta" target='_blank'>
+                        <app-icons svg="IMG"></app-icons>
+                    </a>
+                </div>
+            </div>
+            <div class='definition'>
+                Mikta is a social app with more than <strong class="line-of-code">20k ReactJS line of code</strong> that let you create a user that has the ability to let you read the news, and search images, and post your story and your images, plus you can like photos, share posts, collect images, download images.
+            </div>
+            <div class='created'>
+                <div class='created-title'>Created</div>
+                <div>16 December 2019</div>
+            </div>
+            <div class='update'>
+                <div class='update-title'>Last Update</div>
+                <div>8 February 2021</div>
+            </div>
+            <div class='technologies'>
+                <div class='technologies-title'>Technologies</div>
+                <div class='technology'>react</div>
+                <div class='technology'>react-scroll</div>
+                <div class='technology'>react-image</div>
+                <div class='technology'>react-images-uploading</div>
+                <div class='technology'>react-redux</div>
+                <div class='technology'>redux</div>
+                <div class='technology'>redux-form</div>
+                <div class='technology'>redux-thunk</div>
+                <div class='technology'>axios</div>
+                <div class='technology'>uuid</div>
+                <div class='technology'>zxcvbn</div>
+                <div class='technology'>universal-cookie</div>
+                <div class='technology'>node</div>
+                <div class='technology'>nodemon</div>
+                <div class='technology'>cors</div>
+                <div class='technology'>helmet</div>
+                <div class='technology'>express</div>
+                <div class='technology'>express-session</div>
+                <div class='technology'>ejs</div>
+                <div class='technology'>dotenv</div>
+                <div class='technology'>bcryptjs</div>
+                <div class='technology'>sanitize-html</div>
+                <div class='technology'>validator</div>
+                <div class='technology'>connect-mongo</div>
+                <div class='technology'>mongodb</div>
+            </div>
+        </div>
+    </ng-template>
+    <!-- 2 -->
+    <ng-template swiperSlide>
+        <div [class]="Theme ? 'project-container black-theme':'project-container'">                        
+            <div class='title' (mouseenter)="handleMouseIn('bubblyfast')" (mouseleave)="handleMouseIn('')">
+                <div [class]="mouseInAnimate === 'bubblyfast' ? 'animate_infinity_bubblyfast_mouseIn':''">
+                    bubblyfast
+                </div>
+                <div class="project-navs">
+                    <a rel="noopener noreferrer" href="https://github.com/erinyesinfo/Bubblyfast" target='_blank'>
+                        <app-icons svg="Github"></app-icons>
+                    </a>
+                    <a rel="noopener noreferrer" href="https://bubblyfast.netlify.app" target='_blank'>
+                        <app-icons svg="Globe"></app-icons>
+                    </a>
+                    <a class='a-android' rel="noopener noreferrer" href="https://expo.io/@erinyes/bubblyfast" target='_blank'>
+                        <app-icons svg="Android"></app-icons>
+                    </a>
+                    <a class="project-image-btn" rel="noopener noreferrer" [href]="'assets/' + images.bubbly" target='_blank'>
+                        <app-icons svg="IMG"></app-icons>
+                    </a>
+                </div>
+            </div>
+            <div class='definition'>
+                bubblyfast is a fun and colorful arcade puzzle game, Don't miss out on this fun relaxing game!
+            </div>
+            <div class='created'>
+                <div class='created-title'>Created</div>
+                <div>23 September 2019</div>
+            </div>
+            <div class='update'>
+                <div class='update-title'>Last Update</div>
+                <div>15 February 2021</div>
+            </div>
+            <div class='technologies hoomer'>
+                <div class='technologies-title'>Technologies</div>
+                <div class='technology'>react</div>
+                <div class='technology'>react-lazy-load-image-component</div>
+                <div class='technology'>react-redux</div>
+                <div class='technology'>redux</div>
+                <div class='technology'>redux-thunk</div>
+                <div class='technology'>axios</div>
+                <div class='technology'>uuid</div>
+                <div class='technology'>universal-cookie</div>
+                <div class='technology'>node</div>
+                <div class='technology'>nodemon</div>
+                <div class='technology'>cors</div>
+                <div class='technology'>helmet</div>
+                <div class='technology'>express</div>
+                <div class='technology'>express-session</div>
+                <div class='technology'>ejs</div>
+                <div class='technology'>dotenv</div>
+                <div class='technology'>bcryptjs</div>
+                <div class='technology'>sanitize-html</div>
+                <div class='technology'>validator</div>
+                <div class='technology'>connect-mongo</div>
+                <div class='technology'>mongodb</div>
+            </div>
+        </div>
+    </ng-template>
+    <!-- 3 -->
+    <ng-template swiperSlide>
+        <div [class]="Theme ? 'project-container black-theme':'project-container'">
+            <div class='title' (mouseenter)="handleMouseIn('hoomer')" (mouseleave)="handleMouseIn('')">
+                <div [class]="mouseInAnimate === 'hoomer' ? 'animate_infinity_hoomer_mouseIn':''">
+                    Hoomer
+                </div>
+                <div class="project-navs">
+                    <a rel="noopener noreferrer" href="https://github.com/erinyesinfo/Hoomer" target='_blank'>
+                        <app-icons svg="Github"></app-icons>
+                    </a>
+                    <a rel="noopener noreferrer" href="https://hoomer.netlify.app" target='_blank'>
+                        <app-icons svg="Globe"></app-icons>
+                    </a>
+                    <a class="project-image-btn" rel="noopener noreferrer" [href]="'assets/' + images.hoomer" target='_blank'>
+                        <app-icons svg="IMG"></app-icons>
+                    </a>
+                </div>
+            </div>
+            <div class='definition'>
+                Hoomer is a place to read articles on the Internet. Hoomer is a blogging platform, like Wordpress or Blogger. Hoomer is chaotically, arrhythmically produced by a combination of top-notch editors.
+            </div>
+            <div class='created'>
+                <div class='created-title'>Created</div>
+                <div>5 April 2020</div>
+            </div>
+            <div class='update'>
+                <div class='update-title'>Last Update</div>
+                <div>28 July 2020</div>
+            </div>
+            <div class='technologies hoomer'>
+                <div class='technologies-title'>Technologies</div>
+                <div class='technology'>uuid</div>
+                <div class='technology'>react</div>
+                <div class='technology'>react-scroll</div>
+                <div class='technology'>react-html-parser</div>
+                <div class='technology'>react-ckeditor-component</div>
+                <div class='technology'>react-images-uploading</div>
+                <div class='technology'>html-word-count</div>
+                <div class='technology'>sanitize-html</div>
+            </div>
+        </div>
+    </ng-template>
+    <!-- 4 -->
+    <ng-template swiperSlide>
+        <div [class]="Theme ? 'project-container black-theme':'project-container'">
+            <div class='title' (mouseenter)="handleMouseIn('taski')" (mouseleave)="handleMouseIn('')">
+                <div [class]="mouseInAnimate === 'taski' ? 'animate_infinity_taski_mouseIn':''">
+                    Taski
+                </div>
+                <div class="project-navs">
+                    <a rel="noopener noreferrer" href="https://github.com/erinyesinfo/Taski" target='_blank'>
+                        <app-icons svg="Github"></app-icons>
+                    </a>
+                    <a rel="noopener noreferrer" href="https://taski.netlify.app" target='_blank'>
+                        <app-icons svg="Globe"></app-icons>
+                    </a>
+                    <a class="project-image-btn" rel="noopener noreferrer" [href]="'assets/' + images.taski" target='_blank'>
+                        <app-icons svg="IMG"></app-icons>
+                    </a>
+                </div>
+            </div>
+            <div class='definition'>
+                Taski is todo app with the ability to add, update, read, toggle(complete), delete, plus restore deleted todos. And bonus the ability to change the background color.
+            </div>
+            <div class='created'>
+                <div class='created-title'>Created</div>
+                <div>23 March 2019</div>
+            </div>
+            <div class='update'>
+                <div class='update-title'>Last Update</div>
+                <div>18 February 2020</div>
+            </div>
+            <div class='technologies'>
+                <div class='technologies-title'>Technologies</div>
+                <div class='technology'>react</div>
+                <div class='technology'>react-transition-group</div>
+                <div class='technology'>semantic-ui-css</div>
+            </div>
+        </div>
+    </ng-template>
+</swiper>

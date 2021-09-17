@@ -1,0 +1,96 @@
+<swiper
+    [slidesPerView]="1"
+    [spaceBetween]="50"
+    (swiper)="onSwiper($event)"
+    (slideChange)="onSlideChange()"
+    (slideToClickedSlide)="true"
+    [navigation]="true"
+    [pagination]="{ clickable: true }"
+    [scrollbar]="{ draggable: true }"
+>
+    <!-- 1 -->
+    <ng-template swiperSlide>
+        <div class="talent">
+            <div class="talent-background-img">
+                <div class="talent-box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <div class="talent-content">
+                        <h2>Initiative</h2>
+                        <p>I take responsibility for my own work and don’t wait to be told what to do. I look for ways to improve things, wherever i work.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+    <!-- 2 -->
+    <ng-template swiperSlide>
+        <div class="talent">
+            <div class="talent-background-img">
+                <div class="talent-box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <div class="talent-content">
+                        <h2>Planning</h2>
+                        <p>I'am good at deciding which tasks are a priority. My plans make sure work gets done, and am good at avoiding distractions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+    <!-- 3 -->
+    <ng-template swiperSlide>
+        <div class="talent">
+            <div class="talent-background-img">
+                <div class="talent-box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <div class="talent-content">
+                        <h2>Teamwork</h2>
+                        <p>I'am great at co-operating with others. I understand how you can contribute to your team, and support other people.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+    <!-- 4 -->
+    <ng-template swiperSlide>
+        <div class="talent">
+            <div class="talent-background-img">
+                <div class="talent-box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <div class="talent-content">
+                        <h2>Communication</h2>
+                        <p>I explain your ideas and opinions clearly. I\'am good at listening, presenting or being able to persuade others.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+    <!-- 5 -->
+    <ng-template swiperSlide>
+        <div class="talent">
+            <div class="talent-background-img">
+                <div class="talent-box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <div class="talent-content">
+                        <h2>Problem-solving</h2>
+                        <p>I can assess a situation and understand what’s causing issues, then develop a solution.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+</swiper>

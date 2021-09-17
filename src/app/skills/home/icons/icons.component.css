@@ -1,0 +1,18 @@
+svg {
+    height: 20px;
+    width: 20px;
+}
+
+/*
+ *
+ * Animations
+ *
+*/
+
+/* referring directly to the animation's @keyframe declaration */
+.animate_infinity_heartBeat {
+    -webkit-animation: heartBeat 1s infinite forwards;
+    -moz-animation: heartBeat 1s infinite forwards;
+    -o-animation: heartBeat 1s infinite forwards;
+    animation: heartBeat 1s infinite forwards;
+}

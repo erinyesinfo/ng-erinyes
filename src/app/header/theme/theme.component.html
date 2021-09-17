@@ -1,0 +1,20 @@
+<!-- BEGIN :: theme switch wrapper-->
+<div [class]="Theme ? 'dark-theme-switch-wrapper':'theme-switch-wrapper'">
+    <label for="theme-btn">
+      <input id="theme-btn" type="checkbox"
+        [checked]="Theme" (click)="switchTheme($event)">
+      <div [class]="Theme ? 'dark-slider-wrapper':'slider-wrapper'">
+        <div [class]="Theme ? 'dark-theme-btn-slider':'theme-btn-slider'"></div>
+        <!-- BEGIN :: Stars -->
+        <span [class]="Theme ? 'dark-star star-1':'star star-1'"></span>
+        <span [class]="Theme ? 'dark-star star-2':'star star-2'"></span>
+        <span [class]="Theme ? 'dark-star star-3':'star star-3'"></span>
+        <span [class]="Theme ? 'dark-star star-4':'star star-4'"></span>
+        <span [class]="Theme ? 'dark-star star-5':'star star-5'"></span>
+        <span [class]="Theme ? 'dark-star star-6':'star star-6'"></span>
+        <!-- END :: Stars -->
+      </div>
+    </label>
+</div>
+<!-- END :: theme switch wrapper -->
+  
